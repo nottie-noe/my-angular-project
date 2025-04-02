@@ -68,7 +68,8 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-project:build:production"  // Reverted to browserTarget
+              "browserTarget": "angular-project:build:production", // Reverted to browserTarget
+              "host": "0.0.0.0"
             },
             "development": {
               "browserTarget": "angular-project:build:development"  // Reverted to browserTarget
