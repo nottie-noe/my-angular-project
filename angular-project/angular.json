@@ -11,7 +11,7 @@
         }
       },
       "root": "",
-      "sourceRoot": "my-angular-project/angular-project/src",  // Fixed path
+      "sourceRoot": "src",  // Fixed path
       "prefix": "app",
       "architect": {
         "build": {
@@ -23,7 +23,7 @@
             "polyfills": [
               "zone.js"
             ],
-            "tsConfig": "my-angular-project/angular-project/tsconfig.app.json",  // Fixed path
+            "tsConfig": "tsconfig.app.json",  // Fixed path
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
