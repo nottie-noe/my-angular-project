@@ -64,14 +64,14 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "buildTarget": "angular-project:build"  // Changed from browserTarget
+            "browserTarget": "angular-project:build"  // Reverted to browserTarget
           },
           "configurations": {
             "production": {
-              "buildTarget": "angular-project:build:production"
+              "browserTarget": "angular-project:build:production"  // Reverted to browserTarget
             },
             "development": {
-              "buildTarget": "angular-project:build:development"
+              "browserTarget": "angular-project:build:development"  // Reverted to browserTarget
             }
           },
           "defaultConfiguration": "development"
@@ -79,7 +79,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "angular-project:build"  // Changed from browserTarget
+            "browserTarget": "angular-project:build"  // Reverted to browserTarget
           }
         },
         "test": {
