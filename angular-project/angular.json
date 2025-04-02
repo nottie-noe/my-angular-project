@@ -11,7 +11,7 @@
         }
       },
       "root": "",
-      "sourceRoot": "my-angular-project/angular-project/src",
+      "sourceRoot": "my-angular-project/angular-project/src",  // Fixed path
       "prefix": "app",
       "architect": {
         "build": {
@@ -23,7 +23,7 @@
             "polyfills": [
               "zone.js"
             ],
-            "tsConfig": "my-angular-project/angular-project/tsconfig.app.json",
+            "tsConfig": "my-angular-project/angular-project/tsconfig.app.json",  // Fixed path
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
@@ -64,14 +64,14 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-project:build"
+            "buildTarget": "angular-project:build"  // Changed from browserTarget
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-project:build:production"
+              "buildTarget": "angular-project:build:production"
             },
             "development": {
-              "browserTarget": "angular-project:build:development"
+              "buildTarget": "angular-project:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,7 +79,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-project:build"
+            "buildTarget": "angular-project:build"  // Changed from browserTarget
           }
         },
         "test": {
